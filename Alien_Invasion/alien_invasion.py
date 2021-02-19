@@ -31,9 +31,6 @@ class AlienInvasion:
 		self.aliens = pygame.sprite.Group()
 
 		self._create_fleet()
-
-		# Set the background color.
-		self.bg_color = (230, 230, 230)
 	
 	def run_game(self):
 		"""Start the main loop for the game."""
@@ -96,6 +93,12 @@ class AlienInvasion:
 			new_bullet = Bullet(self)
 			self.bullets.add(new_bullet)
 
+	def _create_fleet(self):
+		"""Create the fleet of aliens."""
+		#Create an alien.
+		alien = Alien(self)
+		self.aliens.add(alien)
+
 	def _update_screen(self):
 		"""Update images on the screen, and flip to the new screen."""
 		self.screen.fill(self.settings.bg_color)
@@ -104,10 +107,6 @@ class AlienInvasion:
 			bullet.draw_bullet()
 		self.aliens.draw(self.screen)
 
-	def _create_fleet(self):
-		"""Create the fleet of aliens."""
-		alien = Alien(self)
-		self.aliens.add(alien)
 		pygame.display.flip()
 
 if __name__ == '__main__':
