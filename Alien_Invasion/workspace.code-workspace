@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\Alien_Invasion_(b)"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.explorerKind": "external"
+	}
+}
