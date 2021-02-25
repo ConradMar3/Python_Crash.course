@@ -18,7 +18,7 @@ while True:
 	ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues,
 		edgecolor='none', s=1)
 
-	ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Greens,
+	ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Purples,
 		edgecolors='none', s=1)
 	# Emphasize the first and last points.
 	ax.scatter(0, 0, c='orange', edgecolors='none', s=100)
