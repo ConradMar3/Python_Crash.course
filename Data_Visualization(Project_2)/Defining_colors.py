@@ -9,7 +9,7 @@ fig, ax = plt.subplots()
 
 #Defining custom colors ( add 'c=?' to scatter())
 #'C=(0,0,0)' is the RGB model.
-#ax.scatter(x_values, y_values, c='violet', s=10)
+#ax.scatter(x_values, y_values, c='green', s=10)
 
 #Using a colormap
 ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
@@ -25,6 +25,6 @@ ax.axis([0, 1100, 0, 1100000])
 #plt.show()
 
 #Saving plot automatically: use 'plt.savefig()'
-plt.savefig('squares_plot.png', bbox_inches='tight')
+plt.savefig('Defining_colors.png', bbox_inches='tight')
 
 #Note: 'plt.savefig()' creates a .png file.
