@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+x1 = [1,2,3,4,5]
+y1 = [1,2,4,8,16]
+
+plt.plot(x1, y1, 'ro--', label='students')
+
+ax = fig.gca()
+ax.set_xticks(numpy.arange(0, 1, 0.1))
+ax.set_yticks(numpy.arange(0, 1., 0.1))
+
+plt.legend(loc='best')
+plt.title('Your title')
+plt.xlabel('Horizontal title')
+plt.ylabel('Vertical title')
+plt.show()
