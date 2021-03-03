@@ -106,7 +106,7 @@ def end_game():
 pygame.init() #Initiate pygame
 screen = pygame.display.set_mode((1280,720)) #Create display surface
 clock = pygame.time.Clock() #Create clock object
-game_font = pygame.font.Font(None, 50)
+game_font = pygame.font.Font('LazenbyCompSmooth.ttf', 40)
 score = 0
 laser_timer = 0
 laser_active = False
